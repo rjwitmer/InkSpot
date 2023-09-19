@@ -8,17 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CCEE55A02ABA3152004BE179 /* InkSpotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEE559F2ABA3152004BE179 /* InkSpotApp.swift */; };
-		CCEE55A22ABA3152004BE179 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEE55A12ABA3152004BE179 /* ContentView.swift */; };
+		CCEE55A22ABA3152004BE179 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEE55A12ABA3152004BE179 /* ListView.swift */; };
 		CCEE55A42ABA3154004BE179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEE55A32ABA3154004BE179 /* Assets.xcassets */; };
 		CCEE55A72ABA3154004BE179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCEE55A62ABA3154004BE179 /* Preview Assets.xcassets */; };
+		CCEE55AF2ABA3C39004BE179 /* Tattoo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEE55AE2ABA3C39004BE179 /* Tattoo.swift */; };
+		CCEE55B12ABA42F9004BE179 /* TattooViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEE55B02ABA42F9004BE179 /* TattooViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CCEE559C2ABA3152004BE179 /* InkSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InkSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCEE559F2ABA3152004BE179 /* InkSpotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InkSpotApp.swift; sourceTree = "<group>"; };
-		CCEE55A12ABA3152004BE179 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CCEE55A12ABA3152004BE179 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		CCEE55A32ABA3154004BE179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCEE55A62ABA3154004BE179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CCEE55AD2ABA3341004BE179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CCEE55AE2ABA3C39004BE179 /* Tattoo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tattoo.swift; sourceTree = "<group>"; };
+		CCEE55B02ABA42F9004BE179 /* TattooViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TattooViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +56,11 @@
 		CCEE559E2ABA3152004BE179 /* InkSpot */ = {
 			isa = PBXGroup;
 			children = (
+				CCEE55AD2ABA3341004BE179 /* Info.plist */,
 				CCEE559F2ABA3152004BE179 /* InkSpotApp.swift */,
-				CCEE55A12ABA3152004BE179 /* ContentView.swift */,
+				CCEE55AE2ABA3C39004BE179 /* Tattoo.swift */,
+				CCEE55B02ABA42F9004BE179 /* TattooViewModel.swift */,
+				CCEE55A12ABA3152004BE179 /* ListView.swift */,
 				CCEE55A32ABA3154004BE179 /* Assets.xcassets */,
 				CCEE55A52ABA3154004BE179 /* Preview Content */,
 			);
@@ -137,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCEE55A22ABA3152004BE179 /* ContentView.swift in Sources */,
+				CCEE55A22ABA3152004BE179 /* ListView.swift in Sources */,
+				CCEE55AF2ABA3C39004BE179 /* Tattoo.swift in Sources */,
 				CCEE55A02ABA3152004BE179 /* InkSpotApp.swift in Sources */,
+				CCEE55B12ABA42F9004BE179 /* TattooViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,9 +285,9 @@
 				DEVELOPMENT_TEAM = 664FMHC4VF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InkSpot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,9 +314,9 @@
 				DEVELOPMENT_TEAM = 664FMHC4VF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = InkSpot/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
